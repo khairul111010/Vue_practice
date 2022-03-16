@@ -3,4 +3,9 @@ let app = new Vue({
   data: {
     name: "Easy Learning",
   },
+  methods: {
+    myname() {
+      return "Eassssy learning method";
+    },
+  },
 });
