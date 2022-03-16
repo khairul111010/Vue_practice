@@ -7,8 +7,8 @@ let app = new Vue({
     myname() {
       return "Eassssy learning method";
     },
-    mydata() {
-      return `${this.name}`;
+    mydata(val) {
+      return `${this.name} this is a value ${val}`;
     },
   },
 });
