@@ -5,6 +5,7 @@ let app = new Vue({
     address: "https://www.google.com",
     classes: ["one", "two"],
     name: "KHD",
+    money: 100,
   },
   methods: {
     myname() {
