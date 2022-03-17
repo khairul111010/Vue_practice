@@ -3,7 +3,7 @@ let app = new Vue({
   data: {
     name: "Easy Learning",
     address: "https://www.google.com",
-    classes: ["one", "two"],
+    classes: ["one", "two", "three", "four"],
     Name: false,
     money: 100,
     log: {
