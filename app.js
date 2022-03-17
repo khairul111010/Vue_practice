@@ -10,6 +10,7 @@ let app = new Vue({
       x: 0,
       y: 0,
     },
+    keydata: "Keydata",
   },
   methods: {
     myname() {
@@ -29,6 +30,10 @@ let app = new Vue({
       // console.log(e);
       this.log.x = e.offsetX;
       this.log.y = e.offsetY;
+    },
+    keymethod(e) {
+      // console.log(e.target.value);
+      this.keydata = e.target.value;
     },
   },
 });
