@@ -11,6 +11,7 @@ let app = new Vue({
       y: 0,
     },
     keydata: "Keydata",
+    age: 30,
   },
   methods: {
     myname() {

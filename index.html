@@ -44,6 +44,10 @@
       <input @keyup="keymethod">
         {{keydata}}
       </input>
+      <div class="twowaydatabindingClass">
+        {{name}} {{age}}
+        <input type="text" v-model="age">
+      </div>
       <!-- <h1 @click="amount(10)">{{ amount(10) }}</h1> -->
     </div>
     <script src="app.js"></script>
