@@ -36,5 +36,8 @@ let app = new Vue({
       // console.log(e.target.value);
       this.keydata = e.target.value;
     },
+    vueModifiers() {
+      console.log(this.name);
+    },
   },
 });
