@@ -54,6 +54,12 @@
         <button @click.shift="vueModifiers">Shift Click</button>
         <a href="https://www.google.com/" @click.prevent>nothing Click</a>
       </div>
+      <div v-if="Name">
+          <h1>Dekha jay</h1>
+      </div>
+      <button @click="showage">
+        {{name}}
+      </button>
       <!-- <h1 @click="amount(10)">{{ amount(10) }}</h1> -->
     </div>
     <script src="app.js"></script>

@@ -4,14 +4,14 @@ let app = new Vue({
     name: "Easy Learning",
     address: "https://www.google.com",
     classes: ["one", "two"],
-    name: "KHD",
+    Name: false,
     money: 100,
     log: {
       x: 0,
       y: 0,
     },
     keydata: "Keydata",
-    age: 30,
+    age: true,
   },
   methods: {
     myname() {
@@ -38,6 +38,9 @@ let app = new Vue({
     },
     vueModifiers() {
       console.log(this.name);
+    },
+    showage() {
+      this.Name = !this.Name;
     },
   },
 });
