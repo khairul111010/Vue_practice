@@ -17,5 +17,8 @@ let app = new Vue({
     amount(val) {
       return (this.money += val);
     },
+    objectDetails(e) {
+      console.log(e);
+    },
   },
 });
