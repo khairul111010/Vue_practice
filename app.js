@@ -6,6 +6,10 @@ let app = new Vue({
     classes: ["one", "two"],
     name: "KHD",
     money: 100,
+    log: {
+      x: 0,
+      y: 0,
+    },
   },
   methods: {
     myname() {
@@ -19,6 +23,12 @@ let app = new Vue({
     },
     objectDetails(e) {
       console.log(e);
+    },
+    over(e) {
+      // alert("done");
+      // console.log(e);
+      this.log.x = e.offsetX;
+      this.log.y = e.offsetY;
     },
   },
 });

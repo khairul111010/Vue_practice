@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .one {
         font-weight: thin;
         /* font-style: line; */
@@ -13,6 +18,12 @@
       .two {
         font-size: 30px;
         font-style: italic;
+      }
+      .canvas {
+        height: 50vh;
+        width: 70vw;
+        margin: 0 auto;
+        background-color: brown;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -29,6 +40,7 @@
       <button @click="objectDetails">-</button>
       <h1>{{ myname() }}</h1>
       <h1>{{ mydata(11) }}</h1>
+      <div class="canvas" @mousemove="over"><h1>{{log.x}} , {{log.y}}</h1></div>
       <!-- <h1 @click="amount(10)">{{ amount(10) }}</h1> -->
     </div>
     <script src="app.js"></script>
